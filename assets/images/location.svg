@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Map of Meadowbrook Golf Club, 2–22 Golf Course Drive, Meadowbrook QLD 4131">
+  <defs>
+    <linearGradient id="loc-land" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EEF1F4"/>
+      <stop offset="1" stop-color="#E1E7EC"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="900" rx="16" fill="url(#loc-land)"/>
+
+  <!-- faint map grid -->
+  <g stroke="#16222E" stroke-opacity="0.05" stroke-width="1">
+    <line x1="0" y1="225" x2="1200" y2="225"/><line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="675" x2="1200" y2="675"/>
+    <line x1="300" y1="0" x2="300" y2="900"/><line x1="600" y1="0" x2="600" y2="900"/>
+    <line x1="900" y1="0" x2="900" y2="900"/>
+  </g>
+
+  <!-- Logan River along the south / east -->
+  <path d="M0 812 Q260 770 470 818 Q700 872 900 800 Q1060 748 1200 786 L1200 900 L0 900 Z" fill="#CFE0EA"/>
+  <path d="M0 812 Q260 770 470 818 Q700 872 900 800 Q1060 748 1200 786" fill="none" stroke="#9DBBCD" stroke-width="2"/>
+  <text x="250" y="868" font-family="Inter,Arial,sans-serif" font-size="20" font-style="italic" fill="#5E7E92">Logan River</text>
+
+  <!-- golf course parkland -->
+  <path d="M196 250 C132 360 156 540 268 626 C392 720 596 700 742 632 C884 566 940 430 872 326 C806 226 612 190 470 210 C352 226 248 196 196 250 Z"
+        fill="#D4E6CE" stroke="#A9C7A0" stroke-width="2"/>
+  <!-- fairway hints -->
+  <g fill="#E4F0DE">
+    <path d="M300 360 C360 320 470 330 520 380 C470 410 360 410 300 360 Z"/>
+    <path d="M520 520 C600 480 700 500 740 548 C680 586 580 580 520 520 Z"/>
+  </g>
+  <text x="360" y="300" font-family="Inter,Arial,sans-serif" font-size="19" fill="#6F8E68">Meadowbrook Golf Course</text>
+
+  <!-- roads -->
+  <g>
+    <line x1="60" y1="158" x2="1140" y2="172" stroke="#C9CED3" stroke-width="16"/>
+    <line x1="60" y1="158" x2="1140" y2="172" stroke="#FFFFFF" stroke-width="2.5" stroke-dasharray="14 14"/>
+    <text x="120" y="142" font-family="Inter,Arial,sans-serif" font-size="20" fill="#6B7785" font-weight="600">Loganlea Road</text>
+
+    <path d="M40 548 Q260 540 430 498 L560 470" fill="none" stroke="#C9CED3" stroke-width="15"/>
+    <path d="M40 548 Q260 540 430 498 L560 470" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-dasharray="13 13"/>
+    <text x="120" y="588" font-family="Inter,Arial,sans-serif" font-size="20" fill="#6B7785" font-weight="600">Golf Course Drive</text>
+  </g>
+
+  <!-- clubhouse building -->
+  <rect x="512" y="446" width="48" height="28" rx="3" fill="#16222E"/>
+
+  <!-- location pin -->
+  <g transform="translate(566 452)">
+    <ellipse cx="0" cy="22" rx="16" ry="5" fill="#16222E" fill-opacity="0.18"/>
+    <path d="M0 18 C-26 -8 -26 -42 0 -42 C26 -42 26 -8 0 18 Z" fill="#C9A24B" stroke="#16222E" stroke-width="2.5"/>
+    <circle cx="0" cy="-26" r="8.5" fill="#16222E"/>
+  </g>
+
+  <!-- labels -->
+  <text x="566" y="556" text-anchor="middle" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-size="32" font-weight="700" fill="#16222E" letter-spacing="0.5">MEADOWBROOK GOLF CLUB</text>
+  <text x="566" y="586" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="19" fill="#51606F">2–22 Golf Course Drive · Meadowbrook QLD 4131</text>
+
+  <!-- title -->
+  <text x="60" y="86" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-size="26" font-weight="700" fill="#C9A24B" letter-spacing="3">OUR LOCATION</text>
+  <text x="61" y="116" font-family="Inter,Arial,sans-serif" font-size="19" fill="#51606F">Workshop &amp; base — Queensland Reel Grinding</text>
+
+  <!-- compass -->
+  <g transform="translate(1092 116)" font-family="Inter,Arial,sans-serif">
+    <circle r="34" fill="#ffffff" fill-opacity="0.7" stroke="#3E5C7E" stroke-opacity="0.4"/>
+    <path d="M0 -26 L9 6 L0 -2 L-9 6 Z" fill="#6E1F2A"/>
+    <text x="0" y="-38" text-anchor="middle" font-size="18" font-weight="700" fill="#16222E">N</text>
+  </g>
+</svg>

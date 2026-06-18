@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 620" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Precision reel grinding — machined steel motif">
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0C141C"/>
+      <stop offset="0.5" stop-color="#16222E"/>
+      <stop offset="1" stop-color="#1F3040"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.42" r="0.55">
+      <stop offset="0" stop-color="#3E5C7E" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#16222E" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="mill" width="46" height="46" patternTransform="rotate(35)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="46" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="620" fill="url(#steel)"/>
+  <rect width="1600" height="620" fill="url(#glow)"/>
+  <rect width="1600" height="620" fill="url(#mill)"/>
+
+  <!-- Concentric reel / grinding-wheel motif, right side -->
+  <g transform="translate(1180 310)" fill="none" stroke="#C9A24B">
+    <circle r="250" stroke-opacity="0.10" stroke-width="1.5"/>
+    <circle r="196" stroke-opacity="0.16" stroke-width="1.5"/>
+    <circle r="138" stroke-opacity="0.22" stroke-width="2"/>
+    <circle r="78"  stroke-opacity="0.30" stroke-width="2"/>
+    <circle r="6" fill="#C9A24B" stroke="none" fill-opacity="0.55"/>
+    <!-- helical reel blades -->
+    <g stroke="#C9A24B" stroke-opacity="0.18" stroke-width="2" stroke-linecap="round">
+      <line x1="78" y1="0" x2="196" y2="-34"/>
+      <line x1="55" y1="55" x2="120" y2="156"/>
+      <line x1="0" y1="78" x2="-34" y2="196"/>
+      <line x1="-55" y1="55" x2="-156" y2="120"/>
+      <line x1="-78" y1="0" x2="-196" y2="34"/>
+      <line x1="-55" y1="-55" x2="-120" y2="-156"/>
+      <line x1="0" y1="-78" x2="34" y2="-196"/>
+      <line x1="55" y1="-55" x2="156" y2="-120"/>
+    </g>
+  </g>
+
+  <!-- thin gold horizon accent -->
+  <rect x="0" y="556" width="1600" height="2" fill="#C9A24B" fill-opacity="0.25"/>
+</svg>

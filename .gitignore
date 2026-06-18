@@ -1,0 +1,7 @@
+# Build tooling & local screenshots — not part of the deployed site
+.tooling/
+
+# OS / editor cruft
+.DS_Store
+**/.DS_Store
+node_modules/

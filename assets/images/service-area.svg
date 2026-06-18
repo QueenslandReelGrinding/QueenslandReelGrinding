@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 920" role="img" aria-label="Indicative service area: within about 50 kilometres of Meadowbrook, Queensland, excluding the Bay Islands">
+  <defs>
+    <linearGradient id="sa-land" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EEF1F4"/>
+      <stop offset="1" stop-color="#E1E7EC"/>
+    </linearGradient>
+    <radialGradient id="sa-ring" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#C9A24B" stop-opacity="0.10"/>
+      <stop offset="0.74" stop-color="#C9A24B" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#C9A24B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="920" rx="16" fill="url(#sa-land)"/>
+
+  <!-- faint map grid -->
+  <g stroke="#16222E" stroke-opacity="0.05" stroke-width="1">
+    <line x1="0" y1="200" x2="1200" y2="200"/><line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/><line x1="0" y1="800" x2="1200" y2="800"/>
+    <line x1="200" y1="0" x2="200" y2="920"/><line x1="400" y1="0" x2="400" y2="920"/>
+    <line x1="600" y1="0" x2="600" y2="920"/><line x1="800" y1="0" x2="800" y2="920"/>
+    <line x1="1000" y1="0" x2="1000" y2="920"/>
+  </g>
+
+  <!-- Moreton Bay / coastline to the east -->
+  <path d="M1200 0 L1200 920 L838 920 Q866 760 832 600 Q808 470 858 330 Q888 205 846 0 Z"
+        fill="#CFE0EA"/>
+  <path d="M846 0 Q888 205 858 330 Q808 470 832 600 Q866 760 838 920"
+        fill="none" stroke="#9DBBCD" stroke-width="2"/>
+  <!-- bay islands (excluded) -->
+  <g fill="#BCD2DF" stroke="#9DBBCD" stroke-width="1.5">
+    <ellipse cx="905" cy="476" rx="34" ry="20"/>
+    <ellipse cx="948" cy="524" rx="22" ry="14"/>
+    <ellipse cx="912" cy="556" rx="18" ry="11"/>
+  </g>
+
+  <!-- service radius -->
+  <circle cx="520" cy="500" r="320" fill="url(#sa-ring)"/>
+  <circle cx="520" cy="500" r="320" fill="none" stroke="#C9A24B" stroke-width="3" stroke-dasharray="9 9"/>
+  <circle cx="520" cy="500" r="170" fill="none" stroke="#3E5C7E" stroke-width="1.5" stroke-opacity="0.55" stroke-dasharray="5 8"/>
+
+  <!-- localities -->
+  <g font-family="Inter,Arial,sans-serif" font-size="22" fill="#1A2430">
+    <g fill="#3E5C7E"><circle cx="430" cy="300" r="6"/><circle cx="250" cy="470" r="6"/>
+      <circle cx="645" cy="600" r="6"/><circle cx="715" cy="765" r="6"/>
+      <circle cx="315" cy="735" r="6"/><circle cx="470" cy="182" r="6"/></g>
+    <text x="444" y="296" font-weight="600">Brisbane</text>
+    <text x="234" y="466" text-anchor="end" font-weight="600">Ipswich</text>
+    <text x="659" y="596" font-weight="600">Beenleigh</text>
+    <text x="729" y="761" font-weight="600">Gold Coast</text>
+    <text x="299" y="731" text-anchor="end" font-weight="600">Beaudesert</text>
+    <text x="484" y="178" fill="#5B6573" font-size="19">Caboolture · freight quote</text>
+  </g>
+
+  <!-- Bay Islands excluded marker -->
+  <g stroke="#6E1F2A" stroke-width="3" stroke-linecap="round">
+    <line x1="897" y1="468" x2="913" y2="484"/><line x1="913" y1="468" x2="897" y2="484"/>
+  </g>
+  <text x="905" y="610" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="19" fill="#6E1F2A" font-weight="600">Bay Islands</text>
+  <text x="905" y="634" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#6E1F2A">excluded</text>
+
+  <!-- Meadowbrook centre pin -->
+  <g transform="translate(520 500)">
+    <path d="M0 16 C-22 -6 -22 -34 0 -34 C22 -34 22 -6 0 16 Z" fill="#C9A24B" stroke="#16222E" stroke-width="2"/>
+    <circle cx="0" cy="-21" r="7" fill="#16222E"/>
+  </g>
+  <text x="520" y="556" text-anchor="middle" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-size="28" font-weight="700" fill="#16222E" letter-spacing="0.5">MEADOWBROOK</text>
+  <text x="520" y="580" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#5B6573">Queensland Reel Grinding</text>
+
+  <!-- title -->
+  <text x="60" y="86" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-size="26" font-weight="700" fill="#C9A24B" letter-spacing="3">INDICATIVE SERVICE AREA</text>
+  <text x="61" y="116" font-family="Inter,Arial,sans-serif" font-size="19" fill="#5B6573">Centred on 2–22 Golf Course Drive, Meadowbrook QLD 4131</text>
+
+  <!-- compass -->
+  <g transform="translate(1092 116)" font-family="Inter,Arial,sans-serif">
+    <circle r="34" fill="#ffffff" fill-opacity="0.7" stroke="#3E5C7E" stroke-opacity="0.4"/>
+    <path d="M0 -26 L9 6 L0 -2 L-9 6 Z" fill="#6E1F2A"/>
+    <text x="0" y="-38" text-anchor="middle" font-size="18" font-weight="700" fill="#16222E">N</text>
+  </g>
+
+  <!-- legend -->
+  <g transform="translate(60 770)" font-family="Inter,Arial,sans-serif" font-size="20" fill="#1A2430">
+    <rect x="-14" y="-30" width="540" height="118" rx="12" fill="#ffffff" fill-opacity="0.66" stroke="#E1E7EC"/>
+    <line x1="4" y1="0" x2="44" y2="0" stroke="#C9A24B" stroke-width="3" stroke-dasharray="9 9"/>
+    <text x="58" y="6">Within ~50 km — pick-up &amp; delivery available</text>
+    <g stroke="#6E1F2A" stroke-width="3" stroke-linecap="round"><line x1="14" y1="34" x2="34" y2="54"/><line x1="34" y1="34" x2="14" y2="54"/></g>
+    <text x="58" y="50">Bay Islands excluded</text>
+    <text x="4" y="84" fill="#5B6573" font-size="18">Beyond 50 km — courier freight quote on request</text>
+  </g>
+</svg>

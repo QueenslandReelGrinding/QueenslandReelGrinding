@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 860" role="img" aria-label="Placeholder for a Toro 5410 or 5510 fairway mower photograph">
+  <defs>
+    <linearGradient id="mp-steel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B2A38"/>
+      <stop offset="1" stop-color="#0E1820"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="860" fill="url(#mp-steel)"/>
+  <!-- placeholder frame -->
+  <rect x="34" y="34" width="1212" height="792" rx="14" fill="none"
+        stroke="#C9A24B" stroke-opacity="0.30" stroke-width="2" stroke-dasharray="10 12"/>
+
+  <!-- ride-on fairway reel mower, simplified side profile -->
+  <g fill="none" stroke="#C9A24B" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.85">
+    <!-- ground -->
+    <line x1="210" y1="612" x2="1072" y2="612" stroke-opacity="0.35"/>
+
+    <!-- front cutting units (gang reels) -->
+    <rect x="244" y="566" width="74" height="34" rx="17"/>
+    <rect x="312" y="572" width="74" height="34" rx="17"/>
+    <rect x="380" y="576" width="74" height="34" rx="17"/>
+    <line x1="452" y1="582" x2="528" y2="512"/>
+
+    <!-- main body / engine cowl + operator deck -->
+    <path d="M528 512 L560 470 Q566 462 578 462 L900 462 Q918 462 918 480 L918 588 L520 588 Q500 588 500 568 L500 540 Q500 512 528 512 Z"/>
+
+    <!-- seat -->
+    <rect x="690" y="404" width="22" height="64" rx="8"/>
+    <rect x="690" y="452" width="78" height="20" rx="8"/>
+
+    <!-- ROPS roll bar -->
+    <path d="M700 404 L700 312 L792 312 L792 404"/>
+
+    <!-- steering column + wheel -->
+    <line x1="636" y1="462" x2="606" y2="402"/>
+    <ellipse cx="600" cy="396" rx="30" ry="12"/>
+
+    <!-- engine louvres -->
+    <line x1="876" y1="496" x2="876" y2="556" stroke-opacity="0.5"/>
+    <line x1="892" y1="496" x2="892" y2="556" stroke-opacity="0.5"/>
+
+    <!-- wheels -->
+    <circle cx="470" cy="588" r="58"/>
+    <circle cx="470" cy="588" r="22"/>
+    <circle cx="846" cy="560" r="84"/>
+    <circle cx="846" cy="560" r="30"/>
+  </g>
+
+  <!-- label chip -->
+  <g transform="translate(640 726)" text-anchor="middle" font-family="'Barlow Condensed','Arial Narrow',sans-serif">
+    <rect x="-300" y="-34" width="600" height="92" rx="46" fill="#000000" fill-opacity="0.35" stroke="#C9A24B" stroke-opacity="0.45" stroke-width="1.5"/>
+    <text x="0" y="-2" fill="#E8ECF1" font-size="30" font-weight="600" letter-spacing="2">TORO 5410 / 5510 FAIRWAY MOWER</text>
+    <text x="0" y="34" fill="#C9A24B" font-size="19" font-weight="500" letter-spacing="3" font-family="Inter,Arial,sans-serif">PHOTOGRAPH TO COME</text>
+  </g>
+</svg>
