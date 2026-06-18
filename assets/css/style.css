@@ -484,23 +484,39 @@ a.banner__note:hover { color: #fff; text-decoration: underline; text-underline-o
   margin: 0 0 1.6rem;
 }
 
-/* layout: two-up name row, everything else full width */
+/* reset Ontraport containers — strip default borders / widths / spacing */
+.contact__form .moonray-form-p2c223352f60,
 .contact__form .moonray-form,
-.contact__form .moonray-form-label-pos-stacked { display: block !important; }
+.contact__form .moonray-form-label-pos-stacked {
+  display: block !important;
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+}
+/* single-column field stack (robust — no fragile nth-child layout) */
 .contact__form form.moonray-form-clearfix {
-  display: grid !important;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem 1.1rem;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1rem !important;
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
 }
 .contact__form .moonray-form-element-wrapper {
-  grid-column: 1 / -1;
   float: none !important;
-  width: auto !important;
+  width: 100% !important;
+  max-width: none !important;
   margin: 0 !important;
   padding: 0 !important;
 }
-.contact__form .moonray-form-element-wrapper:nth-child(1),
-.contact__form .moonray-form-element-wrapper:nth-child(2) { grid-column: span 1; }
 .contact__form .moonray-form-input-type-hidden { display: none !important; }
 
 /* labels */
@@ -565,12 +581,6 @@ a.banner__note:hover { color: #fff; text-decoration: underline; text-underline-o
   font-size: 0.92rem;
   color: var(--text-on-dark-muted);
   margin: 0 0 0.9rem;
-}
-
-@media (max-width: 540px) {
-  .contact__form form.moonray-form-clearfix { grid-template-columns: 1fr; }
-  .contact__form .moonray-form-element-wrapper:nth-child(1),
-  .contact__form .moonray-form-element-wrapper:nth-child(2) { grid-column: 1 / -1; }
 }
 
 /* ===================================================================
